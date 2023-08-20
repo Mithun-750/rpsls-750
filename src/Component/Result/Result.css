@@ -90,6 +90,10 @@
     .circle.win {
         box-shadow: 0px 0px 3px 16px #ffffff1c, 0px 0px 2px 35px #ffffff14, 0px 0px 0px 55px #ffffff08 !important;
     }
+
+    #result-status .btn {
+        min-width: 165px;
+    }
 }
 
 @media (max-width:375px) {
