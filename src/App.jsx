@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css'
 import Header from './Component/Header/Header';
 import MoveContainer from './Component/MoveContainer/MoveContainer';
@@ -11,16 +11,6 @@ function App() {
   const [CMove, setCMove] = useState("")
   const [Pmove, setPmove] = useState("")
   const [Status, setStatus] = useState("")
-
-  useEffect(() => {
-    console.log('Hi1')
-
-    return () => {
-      console.log('Hi2')
-
-    }
-  }, [])
-
 
   return (
     <>
