@@ -14,23 +14,23 @@ export default function Result({ Pmove, CMove, Status }) {
     const Navigate = useNavigate();
 
     useEffect(() => {
+        setTimeout(() => {
+            if (!ShowCMove) {
+                setShowCMove(true)
+                setTimeout(() => {
+                    setWinClass('win')
+                }, 300);
+            }
+        }, 1000);
         return () => {
-            setTimeout(() => {
-                if (!ShowCMove) {
-                    setShowCMove(true)
-                    setTimeout(() => {
-                        setWinClass('win')
-                    }, 300);
-                }
-            }, 1000);
         }
     }, [Status])
 
     useEffect(() => {
+        if (Status === '') {
+            Navigate('/')
+        }
         return () => {
-            if (Status === '') {
-                Navigate('/')
-            }
         }
     })
 
