@@ -93,6 +93,7 @@
 
     #result-status .btn {
         min-width: 165px;
+        width: fit-content;
     }
 }
 
