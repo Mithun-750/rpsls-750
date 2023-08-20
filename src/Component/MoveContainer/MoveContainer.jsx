@@ -75,6 +75,9 @@ export default function MoveContainer({ setScore, setCMove, Score, setPmove, set
         } else if ((moves.indexOf(move) === 1) && (ComMove === 4)) {
             setScore((Score + 1));
             setStatus("WIN")
+        } else if ((moves.indexOf(move) === 3) && (ComMove === 1)) {
+            setScore((Score + 1));
+            setStatus("WIN")
         } else {
             setStatus("DRAW")
         }
