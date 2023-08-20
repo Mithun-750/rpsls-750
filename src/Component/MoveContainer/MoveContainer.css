@@ -1,0 +1,46 @@
+#MoveContainer {
+    height: 35vw;
+    background: url('../../images/bg-pentagon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-moveCon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#con2 {
+    justify-content: space-between;
+    width: 475px;
+    position: relative;
+    bottom: 20px;
+}
+
+#con3 {
+    width: 400px;
+}
+
+@media (max-width:768px) {
+    #MoveContainer {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width:460px) {
+    #MoveContainer {
+        transform: scale(0.75);
+    }
+}
+
+@media (max-width:365px) {
+    #MoveContainer {
+        transform: scale(0.65);
+    }
+}

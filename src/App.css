@@ -1,0 +1,62 @@
+#app::before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-radial-gradient(circle at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+#app {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.text-light {
+  color: azure;
+  text-decoration-line: none;
+}
+
+.text-blue {
+  color: hsl(229, 64%, 46%);
+}
+
+.text-dark {
+  color: hsl(229, 25%, 31%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.btn {
+  padding: 5px 25px;
+  border: 2px solid hsl(217, 16%, 45%);
+  margin-top: 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: monospace;
+  cursor: pointer;
+  background: none;
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width:768px) {
+  #app {
+    padding-bottom: 100px;
+    padding-top: 20px;
+  }
+}
