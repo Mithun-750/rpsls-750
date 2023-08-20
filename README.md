@@ -41,8 +41,6 @@ Users should be able to:
 
 Throughout the development process, I acquired new skills and knowledge, some of which include mastering gradient backgrounds and effectively utilizing multiple box-shadows. Here's an example of the code I used:
 
-To see how you can add code snippets, see below:
-
 ```css
 .circle.win {
   box-shadow: 0px 0px 3px 25px #ffffff1c, 0px 0px 2px 65px #ffffff14,
